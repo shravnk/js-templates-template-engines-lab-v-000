@@ -9,6 +9,7 @@ function postComment() {
   let commentSection = document.getElementById("comments")
 
   commentSection.innerHTML += comment
+  debugger
 }
 
 function createPost() {
