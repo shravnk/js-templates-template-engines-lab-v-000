@@ -1,5 +1,5 @@
 function postComment() {
-  var commentTemplate = _.template(document.getElementById('comment-template'))
+  var commentTemplate = _.template(document.getElementById('comment-template').innerHTML)
 
   let commentText = document.getElementById('commentText').value
   let commenterName = document.getElementById('commenterName').value
