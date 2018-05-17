@@ -23,13 +23,13 @@ function createPost() {
 
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate()
 
-  let postSection = postTemplate({ 'title': postTitle, 'body': postBody, 'author': postAuthor });
+  let postSection = postTemplate({ 'title': postTitle, 'body': postBody, 'author': postAuthor});
 
   let commentsSection = commentsTemplate()
 
   let postElement = document.getElementById("post");
 
   postElement.innerHTML = postSection
-  postElement.getElementsByTagName('footer')[0].innerHTML = commentsSection
+  postElement.getElementsByTagName('footer')[0].innerHTML += commentsSection
 
 }
